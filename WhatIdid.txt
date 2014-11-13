@@ -1,0 +1,40 @@
+Install ninject
+install glimpse.mvc5 and glimpse.ef
+http://localhost:56800/glimpse.axd
+
+
+
+RouteConfig.cs --->
+		routes.MapRoute(
+                	name: "StaticPages",
+                	url: "{action}",
+                	defaults: new { controller = "Home"}
+            	);
+
+ADD Folfers and LogAttribute
+BetSystem.Web.Infrastructure.Filters
+
+    public class LogAttribute
+
+//TODO
+public class LogAttribute : ActionFilterAttribute
+    {
+        public override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            //var db = this.Data.Logs.Add(new Log { Message = filterContext.HttpContext.Request.RawUrl });
+            //db.SaveChanges();
+
+            base.OnActionExecuted(filterContext);
+        }
+    }
+
+
+Global.asax --->
+		ViewEnginesConfiguration.RegisterViewEngines(ViewEngines.Engines);
+
+
+App_Start ---> ViewEnginesConfiguration.cs
+
+
+
+Ivaylo did Automapper - 3:08
