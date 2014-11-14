@@ -36,5 +36,28 @@ Global.asax --->
 App_Start ---> ViewEnginesConfiguration.cs
 
 
+add kendo-ui
+add folder Libraries ---> add reference to .Web
+add folder kendo in Scripts
+add folder kendo in Content
+
+Config BundleConfig.cs
+
+add Areas ---> Administration
+	add Areas\Administration\Views\Shared\_Layout.cshtml
+
+
+add Controller in Areas.Administration.Controllers ---> HomeController.cs
+
+add Navigation.cshtml in Areas\Administration\Views\Home
+
+Config RouteConfig.cs
+
+
+SOME KENDO IN ADMIN
+
 
 Ivaylo did Automapper - 3:08
+
+
+

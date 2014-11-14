@@ -1,0 +1,17 @@
+﻿@model DateTime
+
+@{
+    ViewBag.Title = "Navigation";
+}
+
+<h2>Navigation</h2>
+
+@*@(Html.Kendo()
+    .Calendar()
+    .Name("calendar")
+    .Min(DateTime.Now.AddDays(-100))
+    .Max(DateTime.Now.AddDays(100)))*@
+
+@(Html.Kendo()
+    .DateTimePickerFor(m => m)
+    .Name("date-picker")))
